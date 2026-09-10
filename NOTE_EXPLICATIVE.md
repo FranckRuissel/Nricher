@@ -1,14 +1,14 @@
 # Note explicative
 
-## Nature de l'exercice
+## Nature 
 
 Ce livrable traite deux tâches de nettoyage et d'enrichissement de données sur un fichier
-de ventes e-commerce de 525 034 lignes :
+de ventes e-commerce de 525034 lignes :
 
 1. Détection et correction des erreurs de catégorisation.
 2. Extraction des dimensions et couleurs depuis les libellés produits.
 
-L'approche est celle du data engineering : produire un fichier de sortie propre à partir
+produire un fichier de sortie propre à partir
 d'un traitement reproductible. Un classifieur (TF-IDF + LogisticRegression) est utilisé
 pour la première tâche comme outil de nettoyage automatique, pas comme un projet de data
 science au sens optimisation de métriques ou comparaison rigoureuse de modèles.
@@ -68,19 +68,7 @@ fermé, deux règles déterministes suffisent et restent auditables.
 
 ## Positionnement de l'exercice
 
-Cet exercice relève du data engineering : nettoyage et enrichissement d'un fichier de
+ nettoyage et enrichissement d'un fichier de
 données pour un usage aval. Le classifieur est un outil de nettoyage, pas un livrable de
 data science.
 
-Une vraie démarche de data science aurait exigé :
-
-- Un jeu de test étiqueté manuellement pour mesurer la précision réelle.
-- Une comparaison rigoureuse de plusieurs modèles (embeddings SBERT, modèles de type BERT
-  fine-tuné).
-- Une validation croisée stratifiée par Nature.
-- Un tuning fin des hyperparamètres.
-- Des métriques par classe (précision, rappel, F1).
-
-Ces étapes n'étaient pas nécessaires ici : l'objectif était de produire un livrable
-exploitable, avec un compromis simplicité / efficacité adapté à la taille du fichier et au
-temps disponible.
