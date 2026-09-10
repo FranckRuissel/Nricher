@@ -22,13 +22,8 @@ pip install -r requirements.txt
 jupyter notebook analyse_ecommerce.ipynb
 ```
 
-Le notebook est autonome : toutes les étapes, des constantes aux fonctions, y sont définies
+ toutes les étapes, des constantes aux fonctions, y sont définies
 puis exécutées dans l'ordre. L'exécuter de bout en bout régénère `ventes_enrichies.xlsx`.
-
-Temps de calcul : la première lecture du `.xlsb` demande environ 45 minutes, la bibliothèque
-pyxlsb étant lente sur ce volume. Une copie `ventes_cache.csv` est écrite à ce moment-là et
-relue en une seconde ensuite. L'entraînement dure 40 secondes, l'écriture du `.xlsx` final
-environ 3 minutes.
 
 ## Fichiers
 
